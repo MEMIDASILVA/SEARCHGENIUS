@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pagina de registro</title>
+</head>
+<body>
+    <h1> Pagina de registro </h1>
+    <h2> Registrese </h2>
+    <p> Ya tienes una cuenta?
+        <a href="login">
+            <button>
+                Inicie sesion
+            </button>
+        </a>
+    </p>
+
+    <form action="{{url_for('registro')}}" method = 'POST'>
+        <label for="name"> 
+            Nombre de la startup 
+        </label>
+
+        <div>
+            <input id = 'nombre' name= 'nombre' type="text" autocomplete="nombre">
+        </div>
+
+        <label for="email"> 
+            Ingrese el email 
+        </label>
+
+        <div>
+            <input id = 'email' name= 'email' type="email" autocomplete="email">
+        </div>
+
+        <label for="contacto"> 
+            Ingrese el contacto principal
+        </label>
+
+        <div>
+            <input id = 'contacto' name= 'contacto' type="text" autocomplete="contacto">
+        </div>
+
+        <label for="descripcion"> 
+            Descripcion breve de la Startup 
+        </label>
+
+        <div>
+            <input id = 'descripcion' name= 'descripcion' type="text" autocomplete="descripcion">
+        </div>
+
+        <label for="equipo"> 
+            Cual es el equipo a cargo?  
+        </label>
+
+        <div>
+            <input id = 'equipo' name= 'equipo' type="text" autocomplete="equipo">
+        </div>
+
+        <label for="funding"> 
+            Cuales son las inversiones que tiene la startup?
+        </label>
+
+        <div>
+            <input id = 'funding' name= 'funding' type="text" autocomplete="funding">
+        </div>
+
+        <label for="fase"> 
+            En cual fase se encuentra?
+        </label>
+
+        <div>
+            <input id = 'fase' name= 'fase' type="text" autocomplete="fase">
+        </div>
+
+        <label for="categoria"> 
+            Ingrese la categoria
+        </label>
+
+        <div>
+            <input id = 'categoria' name= 'categoria' type="text" autocomplete="categoria">
+        </div>
+
+        <label for="logros"> 
+            Cuales son los logros de su startup?
+        </label>
+
+        <div>
+            <input id = 'logros' name= 'logros' type="text" autocomplete="logros">
+        </div>
+
+        <label for="password"> 
+            Ingrese una contraseña
+        </label>
+
+        <div>
+            <input id = 'password' name= 'contraseña' type="password" autocomplete="password">
+        </div>
+
+        <div> 
+            <button> CREAR CUENTA </button>
+        </div>
+
+    </form>
+<a href=""></a>
+</body>
+</html>
